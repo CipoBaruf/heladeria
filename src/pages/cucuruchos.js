@@ -17,21 +17,12 @@ function cucuruchos(props) {
         <h1 className="uppercase text-gray-600 tracking-tighter">CUCURUCHOS</h1>
         <div className="flex flex-row justify-around md:justify-center items-center">
           <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Link to="/pago">
-              <Item name={"simple"} />{" "}
-            </Link>
-            <Link to="/pago">
-              <Item name={"cafeteria"} />{" "}
-            </Link>
+            <Item name={"simple"} />
+            <Item name={"cafeteria"} />
           </div>
           <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Link to="/pago">
-              <Item name={"especial"} />{" "}
-            </Link>
-            <Link to="/pago">
-              {" "}
-              <Item name={"tresgustos"} />{" "}
-            </Link>
+            <Item name={"especial"} />
+            <Item name={"tresgustos"} />
           </div>
         </div>
       </div>
