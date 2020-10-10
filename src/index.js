@@ -7,6 +7,8 @@ import * as serviceWorker from "./serviceWorker";
 import Home from "./pages/home";
 import Categorias from "./pages/categorias";
 import Error from "./pages/error";
+import Cucuruchos from "./pages/cucuruchos";
+import Pago from "./pages/pago";
 
 ReactDOM.render(
   <Router>
@@ -16,6 +18,12 @@ ReactDOM.render(
       </Route>
       <Route exact path="/categorias">
         <Categorias />
+      </Route>
+      <Route exact path="/cucuruchos">
+        <Cucuruchos />
+      </Route>
+      <Route exact path="/pago">
+        <Pago />
       </Route>
       <Route>
         <Error />
