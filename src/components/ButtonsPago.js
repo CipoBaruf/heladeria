@@ -2,11 +2,10 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 export default function ButtonsPago(props) {
-  const { goToRoute } = props;
   const history = useHistory();
 
   function handleClickPay() {
-    history.push(goToRoute);
+    history.push("/");
   }
   function handleClickCancel() {
     history.goBack();

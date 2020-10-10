@@ -8,43 +8,45 @@ export default function Form() {
     history.push("/");
   }
   return (
-    <div class="w-full">
-      <form class="">
-        <div class="mb-1">
-          <label class="block text-gray-900 text-xs font-semibold">
+    <div className="w-full">
+      <form className="">
+        <div className="mb-1">
+          <label className="block text-gray-900 text-xs font-semibold">
             Nombre del titular
           </label>
           <input
-            class="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
           />
         </div>
-        <div class="mb-1">
-          <label class="block text-gray-900 text-xs font-semibold">
+        <div className="mb-1">
+          <label className="block text-gray-900 text-xs font-semibold">
             Número de tarjeta
           </label>
           <input
-            class="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="creditCardpayment"
             type="text"
           />
         </div>
         <div className="flex">
-          <div class="mb-1 mr-4">
-            <label class="block text-gray-900 text-xs font-semibold">
+          <div className="mb-1 mr-4">
+            <label className="block text-gray-900 text-xs font-semibold">
               Fecha de expiración
             </label>
             <input
-              class="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="date"
               type="text"
             />
           </div>
-          <div class="mb-1 mr-4">
-            <label class="block text-gray-900 text-xs font-semibold">CVV</label>
+          <div className="mb-1 mr-4">
+            <label className="block text-gray-900 text-xs font-semibold">
+              CVV
+            </label>
             <input
-              class="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow-xs appearance-none rounded w-full py-px px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="CVV"
               type="text"
             />
