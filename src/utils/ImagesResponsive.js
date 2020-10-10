@@ -8,12 +8,12 @@ export default function Imagesbanner(props) {
         className="absolute h-full w-screen visible sm:visible md:invisible lg:invisible xl:invisible"
         src={require(`../images/${imgMobile}.png`)}
         alt=""
-      ></img>
+      />
       <img
         className="absolute h-full w-screen invisible sm:invisible md:visible lg:visible xl:visible"
         src={require(`../images/${img}.png`)}
         alt=""
-      ></img>
+      />
     </div>
   );
 }
