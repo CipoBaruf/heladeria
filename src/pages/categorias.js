@@ -5,7 +5,7 @@ import Buttons from "../components/Buttons";
 import Item from "../components/Item";
 import Navbar from "../components/NavBar";
 
-export default function Categorias() {
+export default function CategoriasPage() {
   return (
     <React.Fragment>
       <Navbar bannerMobile={"baner-mobile1"} banner={"banner1"} logo={"logo"} />

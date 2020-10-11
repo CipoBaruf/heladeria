@@ -1,6 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-export default function Home() {
+export default function HomePage() {
+  const styleImgMobile = "absolute w-screen  h-screen visible  md:invisible";
+  const styleImg = "absolute h-screen w-screen invisible md:visible";
+  const containerButtonStyle =
+    "absolute flex justify-center items-end  z-50 h-full w-full";
+
   const history = useHistory();
 
   function handleClick() {
@@ -9,26 +14,23 @@ export default function Home() {
   return (
     <div className="h-screen">
       <img
-        className="absolute z-50 ml-6 mt-6 h-20 md:h-32"
+        className="absolute z-50 h-16 w-16 m-6  md:h-24 md:w-24"
         src={require("../images/logo.png")}
         alt=""
       />
-      <div className="absolute flex justify-center items-end  z-50 h-full w-full">
-        <button
-          className="mb-24 md:mb-8 bg-red-600 hover:bg-red-700 text-white py-1 px-2"
-          onClick={handleClick}
-        >
+      <div className={containerButtonStyle}>
+        <button className="btn-red mb-16" onClick={handleClick}>
           SHOP NOW
         </button>
       </div>
       <div className="relative">
         <img
-          className="absolute w-screen  h-screen visible sm:visible md:invisible lg:invisible xl:invisible"
+          className={styleImgMobile}
           src={require("../images/portada-mobile.png")}
           alt=""
         ></img>
         <img
-          className="absolute h-screen w-screen invisible sm:invisible md:visible lg:visible xl:visible"
+          className={styleImg}
           src={require("../images/portada.png")}
           alt=""
         ></img>

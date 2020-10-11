@@ -13,16 +13,10 @@ export default function Buttons(props) {
   }
   return (
     <div className=" mt-2 flex justify-center">
-      <button
-        className="bg-green-600 hover:bg-green-700 mx-2 text-white text-xs py-px px-8"
-        onClick={handleClickPay}
-      >
+      <button className=" btn-green" onClick={handleClickPay}>
         Pagar
       </button>
-      <button
-        className="bg-red-600 hover:bg-red-700 mx-2 text-white text-xs py-px px-2"
-        onClick={handleClickCancel}
-      >
+      <button className="btn-red" onClick={handleClickCancel}>
         Cancelar orden
       </button>
     </div>

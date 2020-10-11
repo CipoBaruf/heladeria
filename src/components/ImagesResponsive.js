@@ -3,14 +3,14 @@ import React from "react";
 export default function Imagesbanner(props) {
   const { imgMobile, img } = props;
   return (
-    <div className="relative h-16 md:h-24">
+    <div className="relative h-16 md:h-32">
       <img
-        className="absolute h-full w-screen visible sm:visible md:invisible lg:invisible xl:invisible"
+        className="absolute h-full  top-0 left-0 w-screen visible md:invisible"
         src={require(`../images/${imgMobile}.png`)}
         alt=""
       />
       <img
-        className="absolute h-full w-screen invisible sm:invisible md:visible lg:visible xl:visible"
+        className="absolute h-full top-0 left-0 w-screen invisiblemd:visible"
         src={require(`../images/${img}.png`)}
         alt=""
       />

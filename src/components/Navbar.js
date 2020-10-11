@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ImageResponsive from "../utils/ImagesResponsive";
+import ImageResponsive from "./ImagesResponsive";
 
 function Navbar(props) {
   const { banner, bannerMobile, logo } = props;
@@ -10,7 +10,7 @@ function Navbar(props) {
       <div className="absolute flex items-center z-50 h-full">
         <Link to="/">
           <img
-            className="h-10 ml-6 md:h-16"
+            className="h-10 ml-6 md:mt-8 md:h-16"
             src={require(`../images/${logo}.png`)}
             alt=""
           />

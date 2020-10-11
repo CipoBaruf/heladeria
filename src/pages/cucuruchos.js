@@ -1,15 +1,15 @@
 import React from "react";
 
 import Navbar from "../components/NavBar";
-import ImagesResponsive from "../utils/ImagesResponsive";
+import ImagesResponsive from "../components/ImagesResponsive";
 import Item from "../components/Item";
 import Buttons from "../components/Buttons";
 
-function cucuruchos(props) {
+export default function CucuruchosPage() {
   return (
     <div>
       <Navbar banner={"banner2"} bannerMobile={"baner-mobile2"} logo={"logo"} />
-      <div className="my-4">
+      <div className="my-12">
         <ImagesResponsive img={"barra"} imgMobile={"barra-mobile"} />
       </div>
       <div className="mx-8 mt-2 ">
@@ -29,5 +29,3 @@ function cucuruchos(props) {
     </div>
   );
 }
-
-export default cucuruchos;
