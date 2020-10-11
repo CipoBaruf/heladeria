@@ -605,6 +605,16 @@ video {
   }
 }
 
+.container-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+}
+
 .btn-green {
   --bg-opacity: 1;
   background-color: #38a169;

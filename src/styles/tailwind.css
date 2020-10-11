@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+.container-btn {
+  @apply absolute flex justify-center items-end  z-50 h-full w-full;
+}
+
 .btn-green {
   @apply bg-green-600 text-white text-xs py-px px-6 mx-2 rounded;
 }

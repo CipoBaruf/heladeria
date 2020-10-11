@@ -9,6 +9,7 @@ import Categorias from "./pages/categorias";
 import Error from "./pages/error";
 import Cucuruchos from "./pages/cucuruchos";
 import Pago from "./pages/pago";
+import Producto from "./pages/producto";
 
 ReactDOM.render(
   <Router>
@@ -24,6 +25,9 @@ ReactDOM.render(
       </Route>
       <Route exact path="/pago">
         <Pago />
+      </Route>
+      <Route exact path="/producto">
+        <Producto />
       </Route>
       <Route>
         <Error />

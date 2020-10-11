@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Navbar from "../components/NavBar";
 import ImagesResponsive from "../components/ImagesResponsive";
@@ -16,12 +17,20 @@ export default function CucuruchosPage() {
         <h1 className="uppercase text-gray-600 tracking-tighter">CUCURUCHOS</h1>
         <div className="flex flex-row justify-around md:justify-center items-center">
           <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Item name={"simple"} />
-            <Item name={"cafeteria"} />
+            <Link to="/producto">
+              <Item name={"simple"} />
+            </Link>
+            <Link to="/producto">
+              <Item name={"bañado"} />{" "}
+            </Link>
           </div>
           <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Item name={"especial"} />
-            <Item name={"tresgustos"} />
+            <Link to="/producto">
+              <Item name={"especial"} />{" "}
+            </Link>
+            <Link to="/producto">
+              <Item name={"tresgustos"} />{" "}
+            </Link>
           </div>
         </div>
       </div>

@@ -3,9 +3,6 @@ import { useHistory } from "react-router-dom";
 export default function HomePage() {
   const styleImgMobile = "absolute w-screen  h-screen visible  md:invisible";
   const styleImg = "absolute h-screen w-screen invisible md:visible";
-  const containerButtonStyle =
-    "absolute flex justify-center items-end  z-50 h-full w-full";
-
   const history = useHistory();
 
   function handleClick() {
@@ -18,7 +15,7 @@ export default function HomePage() {
         src={require("../images/logo.png")}
         alt=""
       />
-      <div className={containerButtonStyle}>
+      <div className="container-btn">
         <button className="btn-red mb-16" onClick={handleClick}>
           SHOP NOW
         </button>
