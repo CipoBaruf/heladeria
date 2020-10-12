@@ -10,14 +10,20 @@ export default function ProductoPage() {
   return (
     <div>
       <div className="absolute w-screen h-screen  flex flex-col justify-center items-center">
-        <h1 className="absolute text-white  text-2xl font-semibold">
+        <h1 className="text-white uppercase  underline font-extrabold italic text-4xl">
+          cono piccolo
+        </h1>
+        <h1 className="text-gray-200 px-2 -my-2 font-semibold bg-gray-700  bg-opacity-25">
+          Exquisito cucurucho con helado de vainilla y chips mágicos
+        </h1>
+        <h1 className="text-white -mb-4 mt-4 text-2xl font-semibold">
           un helado nunca fue
         </h1>
-        <h1 className="mt-12 absolute text-white uppercase font-extrabold italic text-4xl">
+        <h1 className="text-white uppercase font-extrabold italic text-4xl">
           tan rico
         </h1>
         <button
-          className="mt-32 btn-green py-1 text-sm font-semibold "
+          className="btn-green py-1 text-sm font-semibold "
           onClick={handleClickPay}
         >
           Comprar
