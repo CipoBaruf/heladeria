@@ -4,7 +4,13 @@ El proyecto está hosteado con Firebase Hosting en https://cipobaruf.web.app/
 
 ### `npm i`
 
-Para instalar las dependecias
+Para instalar las dependecias:
+
+React.js
+Tailwind CSS
+PostCSS
+React router
+
 
 ### `npm run start`
 
