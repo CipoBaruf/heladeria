@@ -1,4 +1,4 @@
-El proyecto está hosteado con Firebase Hosting en https://cipobaruf.web.app/
+El proyecto del branch "extra" está hosteado con Firebase Hosting en https://cipobaruf.web.app/
 
 ## Para correr el proyecto
 
