@@ -7,7 +7,7 @@ import ImageResponsive from "./ImagesResponsive";
 function Navbar(props) {
   const { banner, bannerMobile, logo } = props;
   return (
-    <div className="relative h-16 md:h-24">
+    <div className="relative overflow-hidden md:h-24">
       <div className="absolute flex items-center z-50 h-full">
         <Link to="/">
           <img

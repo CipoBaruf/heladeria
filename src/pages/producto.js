@@ -1,6 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import Navbar from "../components/NavBar";
+
 export default function ProductoPage() {
   const history = useHistory();
 
@@ -8,34 +10,30 @@ export default function ProductoPage() {
     history.push("/pago");
   }
   return (
-    <div>
-      <div className="absolute w-screen h-screen  flex flex-col justify-center items-center">
-        <h1 className="text-white uppercase  underline font-extrabold italic text-4xl">
-          cono piccolo
-        </h1>
-        <h1 className="text-gray-200 px-2 -my-2 font-semibold bg-gray-700  bg-opacity-25">
-          Exquisito cucurucho con helado de vainilla y chips mágicos
-        </h1>
-        <h1 className="text-white -mb-4 mt-4 text-2xl font-semibold">
-          un helado nunca fue
-        </h1>
-        <h1 className="text-white uppercase font-extrabold italic text-4xl">
-          tan rico
-        </h1>
-        <button
-          className="btn-green py-1 text-sm font-semibold "
-          onClick={handleClickPay}
-        >
-          Comprar
-        </button>
-      </div>
+    <div className="flex flex-wrap h-screen flex-col">
+      <Navbar banner={"banner2"} bannerMobile={"baner-mobile2"} logo={"logo"} />
 
       <div
-        className="bg-cover h-screen bg-center"
+        className="bg-cover flex-1 flex bg-center "
         style={{
           backgroundImage: `url(${require("../images/heladosimple5.jpg")})`,
         }}
-      />
+      >
+        <div className="w-full flex flex-col justify-center items-center bg-black bg-opacity-25">
+          <h1 className="text-white uppercase font-extrabold italic text-4xl md:text-6xl">
+            cono piccolo
+          </h1>
+          <h1 className="text-white md:text-xl md:tracking-wider px-2 text-center leading-3 mb-8 mt-2 font-semibold">
+            Exquisito cucurucho con helado de vainilla y chips mágicos
+          </h1>
+          <button
+            className="btn-green py-1 text-sm md:text-xl font-semibold "
+            onClick={handleClickPay}
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
