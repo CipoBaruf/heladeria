@@ -6,9 +6,9 @@ El proyecto está hosteado con Firebase Hosting en https://cipobaruf.web.app/
 
 Para instalar las dependecias:
 
-React.js
-Tailwind CSS
-PostCSS
+React.js,
+Tailwind CSS,
+PostCSS,
 React router
 
 
