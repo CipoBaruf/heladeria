@@ -1,8 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 export default function HomePage() {
-  const styleImgMobile = "absolute w-screen  h-screen visible  md:invisible";
-  const styleImg = "absolute h-screen w-screen invisible md:visible";
+  const styleImgMobile =
+    "absolute w-screen  h-screen visible  md:visible lg:invisible";
+  const styleImg =
+    "absolute h-screen w-screen invisible md:invisible lg:visible";
   const history = useHistory();
 
   function handleClick() {

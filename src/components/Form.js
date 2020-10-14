@@ -9,7 +9,7 @@ export default function Form() {
     history.push("/");
   }
   return (
-    <div className="w-full">
+    <div className="">
       <form className="">
         <InputForm label="Nombre del titular" id="name" />
         <InputForm label="Número de tarjeta" id="creditCardpayment" />

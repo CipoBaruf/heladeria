@@ -11,7 +11,7 @@ function Navbar(props) {
       <div className="absolute flex items-center z-50 h-full">
         <Link to="/">
           <img
-            className="h-10 ml-6 md:mt md:h-16"
+            className="h-10 ml-6 md:h-16"
             src={require(`../images/${logo}.png`)}
             alt=""
           />

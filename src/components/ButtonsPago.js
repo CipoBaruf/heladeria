@@ -11,7 +11,7 @@ export default function ButtonsPago(props) {
     history.goBack();
   }
   return (
-    <div className=" mt-2 flex md:flex-col justify-center">
+    <div className=" mt-2 md:mt-0 flex md:flex-col justify-center">
       <button className="btn-green " onClick={handleClickPay}>
         Ver detalle
       </button>

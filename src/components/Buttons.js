@@ -12,11 +12,11 @@ export default function Buttons(props) {
     history.goBack();
   }
   return (
-    <div className=" mt-2 flex justify-center">
-      <button className=" btn-green" onClick={handleClickPay}>
+    <div className="flex justify-center">
+      <button className=" btn-green lg:text-lg" onClick={handleClickPay}>
         Pagar
       </button>
-      <button className="btn-red" onClick={handleClickCancel}>
+      <button className="btn-red lg:text-lg" onClick={handleClickCancel}>
         Cancelar orden
       </button>
     </div>

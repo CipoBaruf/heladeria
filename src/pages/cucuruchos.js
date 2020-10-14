@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Navbar from "../components/NavBar";
 import ImagesResponsive from "../components/ImagesResponsive";
@@ -8,33 +7,29 @@ import Buttons from "../components/Buttons";
 
 export default function CucuruchosPage() {
   return (
-    <div>
+    <div className="flex flex-wrap h-screen flex-col">
       <Navbar banner={"banner2"} bannerMobile={"baner-mobile2"} logo={"logo"} />
-      <div className="my-12">
+      <div className="mt-4 ">
         <ImagesResponsive img={"barra"} imgMobile={"barra-mobile"} />
       </div>
-      <div className="mx-8 mt-2 ">
-        <h1 className="uppercase text-gray-600 tracking-tighter">CUCURUCHOS</h1>
-        <div className="flex flex-row justify-around md:justify-center items-center">
-          <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Link to="/producto">
-              <Item name={"simple"} />
-            </Link>
-            <Link to="/producto">
-              <Item name={"bañado"} />{" "}
-            </Link>
+      <div className="flex-1 flex flex-col">
+        <h1 className=" uppercase text-gray-600 tracking-tighter ml-8 mt-8">
+          CUCURUCHOS
+        </h1>
+        <div className="flex h-full justify-around  lg:flex-row lg:justify-center">
+          <div className="flex flex-col items-center justify-around lg:flex-row lg:w-full">
+            <Item name={"simple"} to={"/producto"} />
+            <Item name={"bañado"} to={"/producto"} />
           </div>
-          <div className="flex flex-col md:flex-row md:h-64 items-center">
-            <Link to="/producto">
-              <Item name={"especial"} />{" "}
-            </Link>
-            <Link to="/producto">
-              <Item name={"tresgustos"} />{" "}
-            </Link>
+          <div className="flex flex-col items-center justify-around lg:flex-row lg:w-full">
+            <Item name={"especial"} to={"/producto"} />
+            <Item name={"tresgustos"} to={"/producto"} />
           </div>
         </div>
       </div>
-      <Buttons goToRoute={"/pago"} />
+      <div className="my-4 lg:my-12">
+        <Buttons goToRoute={"/pago"} />
+      </div>
     </div>
   );
 }
