@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 
+.react-slideshow-container {
+  @apply h-full;
+}
+.react-slideshow-wrapper {
+  @apply h-full;
+}
+.images-wrap {
+  @apply h-full;
+}
+
 .container-btn {
   @apply absolute flex justify-center items-end  z-50 h-full w-full;
 }

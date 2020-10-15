@@ -605,6 +605,18 @@ video {
   }
 }
 
+.react-slideshow-container {
+  height: 100%;
+}
+
+.react-slideshow-wrapper {
+  height: 100%;
+}
+
+.images-wrap {
+  height: 100%;
+}
+
 .container-btn {
   position: absolute;
   display: flex;
